@@ -2,7 +2,7 @@
   "name": "license-file-generator",
   "displayName": "GitHub-compliant LICENSE file generator",
   "description": "A compliant GitHub repositories license file generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Emilien Cosson",
     "email": "emilien@em-ilien.fr"
