@@ -3,6 +3,10 @@
   "displayName": "GitHub-compliant LICENSE file generator",
   "description": "A compliant GitHub repositories license file generator",
   "version": "0.0.1",
+  "author": {
+    "name": "Emilien Cosson",
+    "email": "emilien@em-ilien.fr"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -15,6 +19,7 @@
     "type": "git",
     "url": "https://github.com/npm/cli.git"
   },
+  "publisher": "EmilienCosson",
   "contributes": {
     "commands": [
       {
