@@ -6,7 +6,7 @@ Add a GitHub-compliant licence to your project's repository via Command Palette 
 
 Easily add a lincense to your project
 
-![](./resources/demo.gif)
+![Demo](https://github.com/Em-ilien/LicenseFileGenerator/blob/master/resources/demo.gif?raw=true)
 
 ## Known Issues
 
