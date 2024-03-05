@@ -6,9 +6,7 @@ const path = require("path");
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-  console.log(
-    "Activating extension 'github-compliant-license-file-generator'..."
-  );
+  console.log("Activating extension 'License file generator'...");
 
   const createLicenseFile = (licensePath, license) => {
     fs.writeFile(licensePath, license, (err) => {
@@ -101,7 +99,7 @@ function activate(context) {
   ].forEach((license) => {
     context.subscriptions.push(
       vscode.commands.registerCommand(
-        `github-compliant-license-file-generator.${license}`,
+        `license-file-generator.${license}`,
         buildCommandForLicense(license + ".txt")
       )
     );
@@ -109,9 +107,7 @@ function activate(context) {
 }
 
 function deactivate() {
-  console.log(
-    "Deactivating extension 'github-compliant-license-file-generator'..."
-  );
+  console.log("Deactivating extension 'license-file-generator'...");
 }
 
 module.exports = {
