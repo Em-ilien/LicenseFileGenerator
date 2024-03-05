@@ -1,0 +1,84 @@
+{
+  "name": "github-compliant-license-file-generator",
+  "displayName": "GitHub-compliant LICENSE file generator",
+  "description": "A compliant GitHub repositories license file generator",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "github-compliant-license-file-generator.apacheLicense",
+        "title": "Generate a LICENSE file with the Apache License 2.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.gnuGeneralPublicLicense3",
+        "title": "Generate a LICENSE file with the GNU General Public License v3.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.mitLicense",
+        "title": "Generate a LICENSE file with the MIT License"
+      },
+      {
+        "command": "github-compliant-license-file-generator.bsdSimplifiedLicense",
+        "title": "Generate a LICENSE file with the BSD 2-Clause \"Simplified\" License"
+      },
+      {
+        "command": "github-compliant-license-file-generator.bsdNewRevisedLicense",
+        "title": "Generate a LICENSE file with the BSD 3-Clause \"New\" or \"Revised\" License"
+      },
+      {
+        "command": "github-compliant-license-file-generator.boostSoftwareLicense",
+        "title": "Generate a LICENSE file with the Boost Software License 1.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.creativeCommonsZero",
+        "title": "Generate a LICENSE file with the Creative Commons Zero v1.0 Universal"
+      },
+      {
+        "command": "github-compliant-license-file-generator.eclipsePublicLicense",
+        "title": "Generate a LICENSE file with the Eclipse Public License 2.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.gnuAfferoGeneralPublicLicense",
+        "title": "Generate a LICENSE file with the GNU Affero General Public License v3.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.gnuGeneralPublicLicense2",
+        "title": "Generate a LICENSE file with the GNU General Public License v2.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.gnuLesserGeneralPublicLicense",
+        "title": "Generate a LICENSE file with the GNU Lesser General Public License v2.1"
+      },
+      {
+        "command": "github-compliant-license-file-generator.mozillaPublicLicense",
+        "title": "Generate a LICENSE file with the Mozilla Public License 2.0"
+      },
+      {
+        "command": "github-compliant-license-file-generator.unlicense",
+        "title": "Generate a LICENSE file with the Unlicense"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
